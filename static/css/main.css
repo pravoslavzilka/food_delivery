@@ -1,0 +1,23 @@
+
+
+// navbar menu
+#own-logo {
+    //height:40px;
+}
+
+#nav-bar-menu {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#sign-up-btn {
+    margin-right:15px;
+    margin-left:10px;
+}
+
+
+// footer
+#footer {
+  height: 50px;
+  margin-top: -50px;
+}
