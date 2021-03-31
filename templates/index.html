@@ -3,5 +3,40 @@
 {% block title %}Order some food !{% endblock title %}
 
 {% block content %}
-    {{text}}
+<style>
+    .card {
+        background:#40cf19;
+        height:250px;
+    }
+    .card-text {
+        padding-left:60px;
+        padding-top:10px;
+        padding-bottom:20px;
+        color:white;
+    }
+    #search-menu {
+
+        padding-left:100px;
+        padding-bottom:180px;
+    }
+    .txt-hd-mn {
+        text-align: center;
+        padding-top:20px;
+    }
+</style>
+
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-text">What food, you would like to order ?</h2>
+    </div>
+    <div>
+        <form class="form-inline my-2 my-lg-0" id="search-menu">
+		   <input class="form-control mr-sm-2" value="{{value}}" type="search" name="key" placeholder="Type some food" aria-label="Search">
+		   <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+		</form>
+    </div>
+  </div>
+    <div>
+        <h2 class="txt-hd-mn">Food to order:</h2>
+    </div>
 {% endblock content %}
