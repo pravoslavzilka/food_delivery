@@ -1,8 +1,8 @@
 
 
 // navbar menu
-#own-logo {
-    //height:40px;
+.own-logo {
+    height:100px;
 }
 
 #nav-bar-menu {
@@ -16,8 +16,14 @@
 }
 
 
-// footer
-#footer {
-  height: 50px;
-  margin-top: -50px;
+.content {
+  min-height: calc(100vh - 70px);
 }
+#footer-lop {
+  background-color:black;
+}
+.footer a {
+    color:white;
+}
+
+/* Other Classes for Page Styling */
