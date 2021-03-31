@@ -27,3 +27,19 @@ class User(Base):
 
     def check_password(self, password):
         return check_password_hash(self.password, password)
+
+    def is_active(self):
+        if self.permit != -1:
+            return True
+        else:
+            return False
+
+    def is_authenticated(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return self.id
+

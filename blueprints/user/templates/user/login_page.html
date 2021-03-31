@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-	StealthPlanes: Sign in
+	Sign in
 {% endblock title %}
 
 
@@ -33,7 +33,7 @@
 	</style>
 
 
-			<form class="col-lg-6 offset-lg-3" id="login-frame" method="post" action="#"  novalidate>
+			<form class="col-lg-6 offset-lg-3" id="login-frame" method="post" action="{{url_for("user.login_page2")}}"  novalidate>
 
 				<div class="row justify-content-center">
 					<h3 style="font-size:35px;" class="signup-header">Sign in</h3>
@@ -106,9 +106,9 @@
 (function() {
   'use strict';
   window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
     var forms = document.getElementsByClassName('col-lg-6 offset-lg-3');
-    // Loop over them and prevent submission
+
     var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
         if (form.checkValidity() === false) {
